@@ -1,0 +1,119 @@
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-20 {
+    font-style: 20px;
+}
+
+.fs-24 {
+    font-style: 24px;
+}
+
+.fs-32 {
+    font-style: 32px;
+}
+
+.fs-40 {
+    font-style: 40px;
+}
+
+.fs-48 {
+    font-style: 48px;
+}
+
+.fs-64 {
+    font-style: 64px;
+}
+
+.fs-96 {
+    font-style: 96px;
+}
+
+.fs-20-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 20px;
+    }
+}
+
+.fs-24-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 24px;
+    }
+}
+
+.fs-32-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 32px;
+    }
+}
+
+.fs-40-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 40px;
+    }
+}
+
+.fs-48-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 48px;
+    }
+}
+
+.fs-64-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 64px;
+    }
+}
+
+.fs-96-pad {
+    @include media-breakpoint-up(sm) {
+        font-style: 96px;
+    }
+}
+
+.fs-20-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 20px;
+    }
+}
+
+.fs-24-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 24px;
+    }
+}
+
+.fs-32-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 32px;
+    }
+}
+
+.fs-40-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 40px;
+    }
+}
+
+.fs-48-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 48px;
+    }
+}
+
+.fs-64-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 64px;
+    }
+}
+
+.fs-96-desk {
+    @include media-breakpoint-up(lg) {
+        font-style: 96px;
+    }
+}
+
+.font-family-sp {
+    font-family: $font-family-title;
+}
