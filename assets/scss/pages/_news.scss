@@ -1,0 +1,60 @@
+.page-news {
+    background-image: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+    padding-block: 60px 80px;
+
+    @include media-breakpoint-up(lg) {
+        padding-block: 160px 120px;
+    }
+
+    .container-xxl {
+        row-gap: 42px;
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-down(lg) {
+            row-gap: 60px;
+
+        }
+    }
+
+    .row {
+        @include media-breakpoint-down(lg) {
+            align-items: center;
+        }
+    }
+
+    .imgBox {
+        height: 108px;
+
+        img {
+            height: 100%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 226px;
+        }
+
+
+    }
+
+    .num {
+        font-family: 'Saira ExtraCondensed';
+        font-size: 96px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 128px;
+
+        }
+    }
+
+    .navPage {
+        font-family: 'Saira ExtraCondensed';
+        gap: 32px;
+
+        a:hover,
+        .a.active {
+            border-bottom: 1px solid $white;
+            color: $white;
+        }
+    }
+}

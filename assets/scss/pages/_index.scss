@@ -169,16 +169,6 @@
 }
 
 .newsBox {
-  time.icon-rounded {
-    display: flex;
-    align-items: center;
-
-    &::before {
-      margin-right: 16px;
-      content: '\e1eb';
-    }
-  }
-
   svg {
     @include media-breakpoint-down(lg) {
       width: fit-content;
@@ -273,18 +263,30 @@
   }
 
   .arrowBox {
-    column-gap: 10px;
-
-    @include media-breakpoint-up(xxl) {
-      column-gap: 40px;
-    }
 
     &>div {
-      width: 60%;
+      width: 100%;
     }
 
     &>svg {
-      width: calc(40% - 40px);
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      column-gap: 10px;
+
+      &>div {
+        width: 60%;
+      }
+
+      &>svg {
+        width: calc(40% - 40px);
+      }
+
+    }
+
+    @include media-breakpoint-up(xxl) {
+      column-gap: 40px;
     }
   }
 }
@@ -295,6 +297,11 @@
   width: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 406px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include media-breakpoint-up(xxl) {
     width: 25%;
@@ -302,19 +309,19 @@
 
 
   &.ai01:hover {
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true');
   }
 
   &.ai02:hover {
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true');
   }
 
   &.ai03:hover {
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_verticalgle.png?raw=true');
   }
 
   &.ai04:hover {
-    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true');
   }
 
 }

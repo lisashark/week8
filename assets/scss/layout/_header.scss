@@ -1,11 +1,9 @@
 header {
   border-bottom: 1px solid $white;
-  background-image: $gradient;
-
-  // @include media-breakpoint-up(lg) {
-  //   background-image: initial;
-  // }
+  background-color: #6D01F7;
 }
+
+
 
 .nav-link {
   transition: 0.1s ease-in;
