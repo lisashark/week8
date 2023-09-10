@@ -1,4 +1,17 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  .linkGroup {
+    a {
+      color: black;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        color: $primary;
+        transition: 0.3s;
+      }
+    }
+
+    @include media-breakpoint-between(sm, lg) {
+      max-width: 140px;
+    }
+  }
 }

@@ -3,117 +3,126 @@
 }
 
 .fs-20 {
-    font-style: 20px;
+    font-size: 20px;
 }
 
 .fs-24 {
-    font-style: 24px;
+    font-size: 24px;
 }
 
 .fs-32 {
-    font-style: 32px;
+    font-size: 32px;
 }
 
 .fs-40 {
-    font-style: 40px;
+    font-size: 40px;
 }
 
 .fs-48 {
-    font-style: 48px;
+    font-size: 48px;
 }
 
 .fs-64 {
-    font-style: 64px;
+    font-size: 64px;
+}
+
+.fs-80 {
+    font-size: 80px;
 }
 
 .fs-96 {
-    font-style: 96px;
+    font-size: 96px;
 }
 
-.fs-20-pad {
+.fs-sm-20 {
     @include media-breakpoint-up(sm) {
-        font-style: 20px;
+        font-size: 20px;
     }
 }
 
-.fs-24-pad {
+.fs-sm-24 {
     @include media-breakpoint-up(sm) {
-        font-style: 24px;
+        font-size: 24px;
     }
 }
 
-.fs-32-pad {
+.fs-sm-32 {
     @include media-breakpoint-up(sm) {
-        font-style: 32px;
+        font-size: 32px;
     }
 }
 
-.fs-40-pad {
+.fs-sm-40 {
     @include media-breakpoint-up(sm) {
-        font-style: 40px;
+        font-size: 40px;
     }
 }
 
-.fs-48-pad {
+.fs-sm-48 {
     @include media-breakpoint-up(sm) {
-        font-style: 48px;
+        font-size: 48px;
     }
 }
 
-.fs-64-pad {
+.fs-sm-64 {
     @include media-breakpoint-up(sm) {
-        font-style: 64px;
+        font-size: 64px;
     }
 }
 
-.fs-96-pad {
+.fs-sm-96 {
     @include media-breakpoint-up(sm) {
-        font-style: 96px;
+        font-size: 96px;
     }
 }
 
-.fs-20-desk {
+.fs-lg-20 {
     @include media-breakpoint-up(lg) {
-        font-style: 20px;
+        font-size: 20px;
     }
 }
 
-.fs-24-desk {
+.fs-lg-24 {
     @include media-breakpoint-up(lg) {
-        font-style: 24px;
+        font-size: 24px;
     }
 }
 
-.fs-32-desk {
+.fs-lg-32 {
     @include media-breakpoint-up(lg) {
-        font-style: 32px;
+        font-size: 32px;
     }
 }
 
-.fs-40-desk {
+.fs-lg-40 {
     @include media-breakpoint-up(lg) {
-        font-style: 40px;
+        font-size: 40px;
     }
 }
 
-.fs-48-desk {
+.fs-lg-48 {
     @include media-breakpoint-up(lg) {
-        font-style: 48px;
+        font-size: 48px;
     }
 }
 
-.fs-64-desk {
+.fs-lg-64 {
     @include media-breakpoint-up(lg) {
-        font-style: 64px;
+        font-size: 64px;
     }
 }
 
-.fs-96-desk {
+.fs-lg-96 {
     @include media-breakpoint-up(lg) {
-        font-style: 96px;
+        font-size: 96px;
     }
 }
 
 .font-family-sp {
     font-family: $font-family-title;
+}
+
+
+.letter-spacing-sm {
+    letter-spacing: 20px;
 }

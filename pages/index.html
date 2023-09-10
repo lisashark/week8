@@ -5,48 +5,447 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
+  <title>ALPHABOX+</title>
 </head>
 
 <body>
-  <div class="home-bg-main">
-    <%- include('./layout/header'); -%>
+  <main class="page-home">
+    <div class="home-cover-bg">
+      <%- include('./layout/header'); -%>
+        <section class="home-cover">
+          <div class="container-xxxl">
+            <div class="row pt-lg-56">
+              <div class="col-lg-3 d-flex align-items-end">
+                <p class="pb-8 border-bottom border-1 d-none d-lg-block text-white">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center my-32 my-lg-0">
+                <div class="imgBox dec_circle"><img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true">
+                </div>
+              </div>
+              <div class="col-lg-3 d-flex flex-column justify-content-between infoBox mt-28 mt-lg-0">
+                <p class="pt-8 pt-lg-4 border-top border-1 text-white fw-bold">ALPHABOX+ STUDIO</p>
+                <p class="copywrite fw-medium d-none d-lg-block">Copyright © 2023 Hexschool.</p>
+              </div>
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6 mainTitle text-white mt-lg-56">
+                <p class="font-family-sp fs-20 fs-lg-32 d-flex justify-content-between">
+                  <span>A</span><span>L</span><span>P</span><span>H</span><span>A</span><span>B</span><span>O</span><span>X</span><span>+</span>
+                </p>
+                <p class="text-center mb-32 mb-lg-24">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+              </div>
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3 aiBox-lg mb-16 mb-0">
+                <div class="ai-card">
+                  <p class="text-white fs-32 font-family-sp ai-name">Diane</p>
+                  <a href="#" class="imgBox">
+                    <img class="d-none d-lg-block"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true">
+                    <img class="d-lg-none"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true"></a>
+                </div>
+              </div>
+              <div class="col-lg-3 aiBox-sm mb-16 mb-0">
+                <div class="ai-card">
+                  <p class="text-white fs-32 font-family-sp ai-name">Felix</p>
+                  <a href="#" class="imgBox">
+                    <img class="d-none d-lg-block"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true">
+                    <img class="d-lg-none"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true"></a>
+                </div>
+              </div>
+              <div class="col-lg-3 aiBox-sm mb-16 mb-0">
+                <div class="ai-card">
+                  <p class="text-white fs-32 font-family-sp ai-name">Karina</p>
+                  <a href="#" class="imgBox">
+                    <img class="d-none d-lg-block"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_verticalgle.png?raw=true">
+                    <img class="d-lg-none"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true"></a>
+                </div>
+              </div>
+              <div class="col-lg-3 aiBox-lg">
+                <div class="ai-card">
+                  <p class="text-white fs-32 font-family-sp ai-name">Vito</p>
+                  <a href="#" class="imgBox">
+                    <img class="d-none d-lg-block"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true">
+                    <img class="d-lg-none"
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square1.png?raw=true"></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <h1 class="index-title">我是首頁</h1>
-  </div>
-  <div class="card" style="width: 18rem">
-    <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-    <div class="card-body">
-      <h5 class="card-title">卡片元件</h5>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-        nobis earum!
-      </p>
+        </section>
     </div>
-  </div>
-
-  <!-- Modal 按鈕 -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    打開 modal
-  </button>
-
-  <!-- Modal 元件 -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">內容</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-          <button type="button" class="btn btn-primary">確定</button>
+    <section class="home-whatis">
+      <div class="container-xxxl">
+        <div class="row">
+          <div class="col-12 lineBox">
+            <div class="dec_line"></div>
+          </div>
+          <div class="col-12 text-white fs-24 fs-lg-48 titleBox fw-bold pt-16 pb-20 pt-lg-8 ">
+            <p>什麼是</p>
+            <p class="d-flex justify-content-between">
+              <span>A</span><span>L</span><span>P</span><span>H</span><span>A</span><span>B</span><span>O</span><span>X</span><span>+</span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="hr-line">
+        <div></div>
+      </div>
+      <div class="container-xxxl ">
+        <div class="row pt-16 pb-32 py-lg-32">
+          <div class="col-lg-2 d-flex align-items-center">
+            <button class="leftBtn btn d-none d-lg-block">
+              <div class="imgBox"><img src="../assets/images/line_start_arrow_notch.svg" alt=""></div>
+            </button>
+          </div>
+          <div class="col-lg-8 col-12">
+            <div class="wrap">
+              <div class="imgBox">
+                <img src="../assets/images/dk.png" class="d-none d-lg-block">
+                <img src="../assets/images/carousel_mobilemb.jpg" class="d-lg-none">
+              </div>
+              <div class="textBox d-lg-none text-white fw-bold px-16">
+                <p class="font-family-sp fs-64">01</p>
+                <p class="fs-24">立 體 投 影 技 術</p>
+                <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              </div>
+            </div>
+            <div class="col-lg-2 align-items-center">
+              <button class="rightBtn btn d-none">
+              </button>
+            </div>
+          </div>
+          <div class="row mt-32">
+            <div class="col-12 lineBox">
+              <div class="dec_line"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="home-news text-white pt-60 pb-80 pt-lg-160 pb-lg-40 fw-bold">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="fw-bold fs-40 fs-sm-48 mb-32 mb-lg-40">最新消息</h2>
+          </div>
+        </div>
+        <div
+          class="row newsBox py-32 py-lg-40 flex-column flex-lg-row  justify-content-lg-between border-top border-bottom border-1 align-items-lg-start">
+          <div class="col-lg-9 mainContent">
+            <time class="icon-rounded">2023.06.30</time>
+            <h3 class="letter-spacing-sm fs-20 mt-8 mb-12">產品升級公告</h3>
+            <p class="mb-20 mb-lg-0">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！
+            </p>
+          </div>
+          <div class="col-lg-1"></div>
+          <button class="btn col-lg-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 196 24" fill="none">
+              <mask id="mask0_435_1964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="196"
+                height="24">
+                <rect width="100%" height="24" fill="#FFF" />
+              </mask>
+              <g mask="url(#mask0_435_1964)">
+                <path d="M183 19L186.425 13H2V11H186.425L183 5L194 12L183 19Z" fill="white" />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 pe-lg-0 border-end border-1">
+            <div class="newsBox py-32 py-lg-40 flex-column  border-bottom border-1 px-lg-16">
+              <div class="mainContent">
+                <time class="icon-rounded">2023.06.30</time>
+                <h3 class="letter-spacing-sm fs-20 mt-8 mb-12">產品升級公告</h3>
+                <p class="mb-20 mb-lg-0">榮幸地宣布，ALPHABOX+
+                  已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！
+                </p>
+              </div>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 196 24" fill="none">
+                  <mask id="mask0_435_1964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="196"
+                    height="24">
+                    <rect width="100%" height="24" fill="#FFF" />
+                  </mask>
+                  <g mask="url(#mask0_435_1964)">
+                    <path d="M183 19L186.425 13H2V11H186.425L183 5L194 12L183 19Z" fill="white" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-0">
+            <div class="newsBox py-32 py-lg-40 flex-column border-bottom border-1 px-lg-16">
+              <div class="mainContent">
+                <time class="icon-rounded">2023.06.30</time>
+                <h3 class="letter-spacing-sm fs-20 mt-8 mb-12">產品升級公告</h3>
+                <p class="mb-20 mb-lg-0">榮幸地宣布，ALPHABOX+
+                  已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！
+                </p>
+              </div>
+              <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 196 24" fill="none">
+                  <mask id="mask0_435_1964" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="196"
+                    height="24">
+                    <rect width="100%" height="24" fill="#FFF" />
+                  </mask>
+                  <g mask="url(#mask0_435_1964)">
+                    <path d="M183 19L186.425 13H2V11H186.425L183 5L194 12L183 19Z" fill="white" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <a class="imgBox dec_circle">
+            <img src="../assets/images/Linked Path Group.png">
+            <span class="d-inline-block fw-bold">查看更多</span>
+          </a>
+          <p class="d-none d-lg-block text-end">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+        </div>
+      </div>
+    </section>
+    <section class="home-share ">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12 text-white">
+            <div class="titleBox">
+              <h2 class="fw-bold fs-40 fs-sm-48">使用分享</h2>
+              <div class="num mt-16 mb-24 mb-40">01 - 04</div>
+              <h3 class="fw-bold">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</h3>
+              <span class="material-symbols-rounded mb-16 mb-lg-24">
+                emergency
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scrollBox">
+        <div class="cardWrap d-flex flex-column flex-lg-row px-12 px-xxl-0 pb-lg-48">
+          <div class="shareCard text-white bg-indigo p-24 d-flex flex-column justify-content-between rounded-1 fw-bold">
+            <div class="info">
+              <span>Zona</span>
+              <svg class="mx-8" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <span>Taipei</span>
+              <p class="mt-32">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+            </div>
+            <div class="from">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <svg class="mx-16" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <span>ALPHABOX+ Dianne</span>
+            </div>
+          </div>
+          <div class="shareCard  bg-white p-24 d-flex flex-column justify-content-between rounded-1 fw-bold">
+            <div class="info">
+              <span>Zona</span>
+              <svg class="mx-8" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="black" />
+              </svg>
+              <span>Taipei</span>
+              <p class="mt-32">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+            </div>
+            <div class="from">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="black" />
+              </svg>
+              <svg class="mx-16" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="black" />
+              </svg>
+              <span>ALPHABOX+ Dianne</span>
+            </div>
+          </div>
+          <div
+            class="shareCard  text-white bg-indigo p-24 d-flex flex-column justify-content-between rounded-1 fw-bold">
+            <div class="info">
+              <span>Zona</span>
+              <svg class="mx-8" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <span>Taipei</span>
+              <p class="mt-32">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+            </div>
+            <div class="from">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <svg class="mx-16" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <span>ALPHABOX+ Dianne</span>
+            </div>
+          </div>
+          <div class="shareCard  bg-white p-24 d-flex flex-column justify-content-between rounded-1 fw-bold">
+            <div class="info">
+              <span>Zona</span>
+              <svg class="mx-8" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="black" />
+              </svg>
+              <span>Taipei</span>
+              <p class="mt-32">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+            </div>
+            <div class="from">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="black" />
+              </svg>
+              <svg class="mx-16" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="black" />
+              </svg>
+              <span>ALPHABOX+ Dianne</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl">
+        <div class="row">
+          <p class="fw-bold d-none d-lg-block text-white mt-136">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="home-contact bg-dark">
+      <div class="container-xxl">
+        <div class="row ">
+          <div class="col-lg-5 fw-bold text-white">
+            <h2 class="fs-40 fs-sm-48">聯絡我們</h2>
+            <div class="dec mt-20 mb-36 mb-lg-56">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                <circle cx="4" cy="4" r="4" fill="white" />
+              </svg>
+              <span class="ml-12 dec_line d-inline-block"></span>
+            </div>
+            <p class="mb-4">讓科技成為您的最佳夥伴</p>
+            <p>立即體驗神奇功能並享限時優惠！</p>
+          </div>
+          <div class="col-lg-7 d-flex flex-column">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <mask id="mask0_437_2192" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="80"
+                height="80">
+                <rect width="80" height="80" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_437_2192)">
+                <path
+                  d="M34.1666 70V50.1667L17 60.0833L11.1666 50L28.3333 40L11.1666 30.0833L17 20L34.1666 29.9167V10H45.8333V29.9167L63 20L68.8333 30.0833L51.6666 40L68.8333 50L63 60.0833L45.8333 50.1667V70H34.1666Z"
+                  fill="white" />
+              </g>
+            </svg>
+            <input type="email" placeholder="EMAIL" class="text-black fw-bold mt-16">
+            <textarea name="" id="" cols="30" rows="10" placeholder="COMMENTS" class="text-black fw-bold my-16">
+
+            </textarea>
+
+            <button class="btn bg-purple py-8 px-16 mt-16 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <mask id="mask0_464_3402" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                  height="24">
+                  <rect width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_464_3402)">
+                  <path
+                    d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z"
+                    fill="white" />
+                </g>
+              </svg>
+              送出</button>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="home-aiIntro">
+      <div class="d-flex">
+        <div class="introCard ai01">
+          <p class="num text-center mt-16 mb-18 mt-lg-20 mb-lg-80">1</p>
+          <p class="font-family-sp fs-24 fs-lg-32 text-center">Diane</p>
+          <div class="d-flex flex-column flex-lg-row arrowBox px-12 pb-24 ">
+            <div>
+              <p class="fw-bold">知識型</p>
+              <p>學術領導/知識分享/智能問答</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_437_2268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155"
+                height="24">
+                <rect width="100%" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_437_2268)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="introCard ai01">
+          <p class="num text-center mt-16 mb-18 mt-lg-20 mb-lg-80">2</p>
+          <p class="font-family-sp fs-24 fs-lg-32 text-center">Felix</p>
+          <div class="d-flex flex-column flex-lg-row arrowBox px-12 pb-24 ">
+            <div>
+              <p class="fw-bold">娛樂型</p>
+              <p>音樂播放/語音互動/遊戲陪伴</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_437_2268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155"
+                height="24">
+                <rect width="100%" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_437_2268)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="introCard ai01">
+          <p class="num text-center mt-16 mb-18 mt-lg-20 mb-lg-80">3</p>
+          <p class="font-family-sp fs-24 fs-lg-32 text-center">Karina</p>
+          <div class="d-flex flex-column flex-lg-row arrowBox px-12 pb-24 ">
+            <div>
+              <p class="fw-bold">生活型</p>
+              <p>健康提醒/日程安排/智能家居</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_437_2268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155"
+                height="24">
+                <rect width="100%" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_437_2268)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="introCard ai01">
+          <p class="num text-center mt-16 mb-18 mt-lg-20 mb-lg-80">4</p>
+          <p class="font-family-sp fs-24 fs-lg-32 text-center">Vito</p>
+          <div class="d-flex flex-column flex-lg-row arrowBox px-12 pb-24 ">
+            <div>
+              <p class="fw-bold">情感型</p>
+              <p>情感識別/心情分析/心靈支持</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="24" viewBox="0 0 155 24" fill="none">
+              <mask id="mask0_437_2268" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="155"
+                height="24">
+                <rect width="100%" height="24" fill="#D9D9D9" />
+              </mask>
+              <g mask="url(#mask0_437_2268)">
+                <path d="M142 19L145.425 13H2V11H145.425L142 5L153 12L142 19Z" fill="white" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
   <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

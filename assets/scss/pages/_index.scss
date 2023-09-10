@@ -1,3 +1,320 @@
-.home-bg-main {
+.home-cover-bg {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-home {
+  .container-xxxl {
+    .col {
+      border: 1px solid blue;
+    }
+  }
+}
+
+.home-cover {
+
+  .row {
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+
+      &>div:last-child {
+        margin-top: -100px;
+        transform: translateY(100px);
+      }
+
+      .infoBox {
+        order: -1;
+      }
+    }
+  }
+
+  .copywrite {
+    color: #AD93CF;
+  }
+
+  .aiBox-lg,
+  .aiBox-sm {
+
+    @include media-breakpoint-up(lg) {
+      --height: calc(25vw * 1.6);
+      margin-top: -132px;
+    }
+
+    .imgBox {
+      display: block;
+      width: 100%;
+
+      &:hover {
+        img {
+          background: url(<path-to-image>), lightgray -110.341px -34.146px / 153.049% 158.158% no-repeat;
+          box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+        }
+      }
+    }
+  }
+
+
+  .aiBox-lg {
+    @include media-breakpoint-up(lg) {
+      transform: translateY(40px);
+
+      .imgBox {
+        height: var(--height);
+      }
+    }
+  }
+
+  .aiBox-sm {
+    @include media-breakpoint-up(lg) {
+      transform: translateY(126px);
+
+      .imgBox {
+        height: calc(var(--height) - 84px);
+      }
+    }
+  }
+
+
+  .ai-card {
+    position: relative;
+  }
+
+  .ai-name {
+    position: absolute;
+    top: 16px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.home-whatis {
+  background-image: $gradient2, url(../images/mb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 132px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 64px;
+    background-image: $gradient2, url(../images/desk.jpg);
+    background-position: left;
+  }
+
+  .dec_line {
+    height: 40px;
+    background-image: linear-gradient(90deg, #7000FF 1.22%, #11002D 116.05%);
+  }
+
+  .titleBox {
+    p:first-child {
+      letter-spacing: 24px;
+    }
+
+    p:last-child {
+      max-width: 700px;
+    }
+  }
+
+  .rightBtn,
+  .leftBtn {
+    max-width: 172px;
+    width: 100%;
+  }
+
+  .wrap {
+    position: relative;
+
+    .imgBox {
+      width: 100%;
+    }
+  }
+
+  .textBox {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+  }
+}
+
+.home-news {
+  background-image: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+
+  h2 {
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .dec_circle {
+    position: relative;
+    margin-top: 40px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 76px;
+      margin-bottom: 96px;
+    }
+
+
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.newsBox {
+  time.icon-rounded {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      margin-right: 16px;
+      content: '\e1eb';
+    }
+  }
+
+  svg {
+    @include media-breakpoint-down(lg) {
+      width: fit-content;
+    }
+  }
+}
+
+
+.home-share {
+  background-image: url('../images/bgshare.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 160px 40px;
+
+  @include media-breakpoint-up(lg) {
+    padding-block: 60px 60px;
+  }
+
+  .titleBox {
+    position: relative;
+
+    h3 {
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 16px;
+        right: 40px;
+      }
+    }
+  }
+
+  .scrollBox {
+
+    @include media-breakpoint-up(xxl) {
+      padding-left: calc((100% - 1320px) / 2);
+    }
+
+    &>.d-flex {
+      gap: 24px;
+      overflow-x: auto;
+    }
+  }
+
+  .shareCard {
+    height: 351px;
+    width: 100%;
+    flex-shrink: 0;
+
+    @include media-breakpoint-up(lg) {
+      width: 416px;
+      height: 416px;
+    }
+
+  }
+}
+
+.home-contact {
+  padding-block: 60px 80px;
+
+  @include media-breakpoint-up(lg) {
+    padding-block: 144px;
+  }
+
+  .dec_line {
+    width: 124px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  button {
+    max-width: 384px;
+  }
+}
+
+.home-aiIntro {
+  &>.d-flex {
+    flex-wrap: wrap;
+
+    @include media-breakpoint-up(lg) {
+      flex-wrap: nowrap;
+    }
+
+  }
+
+  .num {
+    font-family: 'Saira ExtraCondensed';
+    font-size: 128px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 400px;
+    }
+  }
+
+  .arrowBox {
+    column-gap: 10px;
+
+    @include media-breakpoint-up(xxl) {
+      column-gap: 40px;
+    }
+
+    &>div {
+      width: 60%;
+    }
+
+    &>svg {
+      width: calc(40% - 40px);
+    }
+  }
+}
+
+.introCard {
+  background-color: #000;
+  color: #fff;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(xxl) {
+    width: 25%;
+  }
+
+
+  &.ai01:hover {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  }
+
+  &.ai02:hover {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  }
+
+  &.ai03:hover {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  }
+
+  &.ai04:hover {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  }
+
 }

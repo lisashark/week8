@@ -1,4 +1,33 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+  border-bottom: 1px solid $white;
+  background-image: $gradient;
+
+  // @include media-breakpoint-up(lg) {
+  //   background-image: initial;
+  // }
+}
+
+.nav-link {
+  transition: 0.1s ease-in;
+
+  &:hover {
+    transform: translateY(-2px);
+    transition: 0.3s ease-in;
+    font-weight: bolder;
+  }
+
+}
+
+.navbar-nav {
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+  }
+}
+
+.mainFunction,
+.subFunction {
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    text-align: center;
+  }
 }
