@@ -52,7 +52,7 @@
         gap: 32px;
 
         a:hover,
-        .a.active {
+        a.active {
             border-bottom: 1px solid $white;
             color: $white;
         }
